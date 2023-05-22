@@ -20,3 +20,11 @@ test('check Upper/lower case', () => {
     const result = areAnagrams('Chien', 'Niche')
     expect(result).toBeTruthy()
 })
+test('check accent', () => {
+    const result = areAnagrams('cuve', 'vécu')
+    expect(result).toBeTruthy()
+})
+test('blank and spaces', () => {
+    const result = areAnagrams('Marcel Proust', 'Compulser art')
+    expect(result).toBeTruthy()
+})
