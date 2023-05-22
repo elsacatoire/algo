@@ -1,5 +1,9 @@
 const areAnagrams = require('./areAnagrams.js')
 
+
+test('simpliest test', () => {
+    expect(areAnagrams('oui', 'oui')).toBeTruthy()
+})
 test('pas un anagrame', () => {
     const result = areAnagrams('chat', 'lait')
     expect(result).toBeFalsy()
