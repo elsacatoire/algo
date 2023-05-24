@@ -1,26 +1,3 @@
-function areAnagrams(word1, word2) {
-    // Convertir les mots en minuscules et supprimer les espaces
-    const sortedWord1 = word1.toLowerCase().replace(/\s/g, '').split('').sort().join('');
-    const sortedWord2 = word2.toLowerCase().replace(/\s/g, '').split('').sort().join('');
-
-    return sortedWord1 === sortedWord2;
-}
-
-console.log(areAnagrams('listen', 'silent')); // Affiche true
-console.log(areAnagrams('hello', 'world')); // Affiche false
-
-
-function isPalindrome(word) {
-    // Convertir le mot en minuscules et supprimer les espaces
-    const cleanedWord = word.toLowerCase().replace(/\s/g, '');
-
-    // Comparer le mot avec son inversion
-    return cleanedWord === cleanedWord.split('').reverse().join('');
-}
-
-console.log(isPalindrome('radar')); // Affiche true
-console.log(isPalindrome('hello')); // Affiche false
-
 
 function sumArray(arr) {
     let sum = 0;
@@ -30,7 +7,7 @@ function sumArray(arr) {
     return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5])); // Affiche 15
+//console.log(sumArray([1, 2, 3, 4, 5])); // Affiche 15
 
 
 function isPrime(number) {
@@ -46,8 +23,8 @@ function isPrime(number) {
     return true;
 }
 
-console.log(isPrime(7)); // Affiche true
-console.log(isPrime(12)); // Affiche false
+//console.log(isPrime(7)); // Affiche true
+//console.log(isPrime(12)); // Affiche false
 
 
 function factorial(number) {
@@ -62,7 +39,7 @@ function factorial(number) {
     return result;
 }
 
-console.log(factorial(5)); // Affiche 120
+//console.log(factorial(5)); // Affiche 120
 
 
 
@@ -70,7 +47,7 @@ function reverseString(str) {
     return str.split('').reverse().join('');
 }
 
-console.log(reverseString('Hello')); // Affiche "olleH"
+//console.log(reverseString('Hello')); // Affiche "olleH"
 
 
 function findMax(arr) {
@@ -83,5 +60,5 @@ function findMax(arr) {
     return max;
 }
 
-console.log(findMax([3, 8, 2, 10, 5])); // Affiche 10
+//console.log(findMax([3, 8, 2, 10, 5])); // Affiche 10
 
