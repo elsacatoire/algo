@@ -1,11 +1,17 @@
 function areAnagrams(word1, word2) {
-    if (word1.length != word2.length) {
-        return false
-    }
     console.log('pouet');
-    const sortedW1 = word1.toLowerCase().split('').sort().join('')
-    const sortedW2 = word2.toLowerCase().split('').sort().join('')
+    let normalizedWord1 = deleteAccent(word1)
+    let normalizedWord2 = deleteAccent(word2)
+    const sortedW1 = normalizedWord1.toLowerCase().split('').sort().join('')
+    const sortedW2 = normalizedWord2.toLowerCase().split('').sort().join('')
     return sortedW1 == sortedW2
 }
 console.log(areAnagrams('oui', 'oui'));
 module.exports = areAnagrams
+
+
+function deleteAccent(word) {
+    let modifiedWord = word.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    return modifiedWord
+}
+
