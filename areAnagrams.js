@@ -26,4 +26,4 @@ function deleteAccent(word) {
 //   /  \/  \  /  \      Le code s'exécute     /  \/  \/  \
 //  /   /    \/    \            ICI  :        /    \   \   \
 //    ||  || || ||                              ||  ||  ||
-console.log(areAnagrams('silent', 'intels'));
+console.log(areAnagrams('silent', 'listen'));

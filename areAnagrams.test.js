@@ -1,6 +1,6 @@
 const areAnagrams = require('./areAnagrams.js')
 
-// Rock 'n' test !
+// Rock'n roll some tests !
 test('simpliest test', () => {
     expect(areAnagrams('oui', 'oui')).toBeTruthy()
 })
