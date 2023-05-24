@@ -10,7 +10,8 @@ module.exports = isPalindrome
 
 function isPalindrome(word) {
     // Convertir le mot en minuscules et supprimer les espaces
-    const cleanedWord = word.toLowerCase().replace(/\s/g, '');
+    const withoutAccent = word.normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+    const cleanedWord = withoutAccent.toLowerCase().replace(/\s/g, '');
 
     // Comparer le mot avec son inversion
     return cleanedWord === cleanedWord.split('').reverse().join('');

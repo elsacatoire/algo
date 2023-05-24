@@ -12,3 +12,6 @@ test('simpliest test2', () => {
 test('one word with accent', () => {
     expect(isPalindrome('rêver')).toBeTruthy()
 })
+test('simple sentence', () => {
+    expect(isPalindrome('Élu par cette crapule')).toBeTruthy()
+})
