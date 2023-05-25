@@ -4,17 +4,35 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Run JavaScript file",
+            "program": "${file}",
             "skipFiles": [
                 "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\areAnagrams.js"
+            ]
         },
         {
             "type": "node",
             "name": "Run Current File",
             "request": "launch",
             "program": "${workspaceFolder}\\sumArray.js"
+        },
+        {
+            "type": "node",
+            "name": "Run Current File",
+            "request": "launch",
+            "program": "${workspaceFolder}\\sumArray.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run JavaScript file",
+            "program": "${file}"
+        },
+        {
+            "type": "node",
+            "name": "Run Current File",
+            "request": "launch",
+            "program": "${workspaceFolder}\\isPrime.js"
         }
     ]
 }

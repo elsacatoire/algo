@@ -2,22 +2,27 @@
 //    /\  /\ /\ /\                              /\  /\  /\
 //   /  \/  \  /  \ elsa_des_bois              /  \/  \/  \
 //  /   /    \/    \    main functions for    /    \   \   \
-//    ||  || || ||  additionning array elements ||  ||  ||
+//    ||  || || ||   is it a prime number ?     ||  ||  ||
 
 // import/export functions
-module.exports = sumArray
+module.exports = isPrime
 
-function sumArray(array) {
-    let sum = 0
-    const len = array.length
-    for (let i = 0; i < len; i++) {
-        sum = sum + array[i];
+//1.
+function isPrime(number) {
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            console.log("we're on");
+            return false
+        }
     }
-    return sum
+    if (number % number == 0) {
+        return true
+    }
 }
+
 
 //    /\  /\ /\ /\                              /\  /\  /\
 //   /  \/  \  /  \      Le code s'exécute     /  \/  \/  \
 //  /   /    \/    \            ICI  :        /    \   \   \
 //    ||  || || ||                              ||  ||  ||
-//console.log(sumArray([1, 3, 5]));
+console.log(isPrime(13))
