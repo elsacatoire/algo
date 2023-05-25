@@ -7,3 +7,7 @@ const findMax = require("./smallAlgo")
 test('simpliest test', () => {
     expect(reverseString("ad")).toBe("da")
 })
+
+test('findMax simpliest test', () => {
+    expect(findMax([1, 5, 2])).toBe(5)
+})

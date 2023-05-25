@@ -14,7 +14,7 @@ function reverseString(string) {
 }
 
 function findMax(array) {
-
+    let valueMax = array.sort()
 
     return valueMax
 }
@@ -24,4 +24,5 @@ function findMax(array) {
 //  /   /    \/    \            ICI  :        /    \   \   \
 //    ||  || || ||                              ||  ||  ||
 console.log(reverseString("hello"));
+console.log(reverseString("ad"));
 console.log(findMax([1, 50, 3]));
