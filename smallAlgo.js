@@ -8,8 +8,8 @@
 module.exports = reverseString
 
 function reverseString(string) {
-    const reversedString = string
-    return reverseString
+    let reversedString = string.split('').reverse().join('')
+    return reversedString
 }
 
 //    /\  /\ /\ /\                              /\  /\  /\

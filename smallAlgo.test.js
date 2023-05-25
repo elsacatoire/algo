@@ -1,8 +1,8 @@
 
 //import function to
-const reverseString = require('./sumArray')
+const reverseString = require('./smallAlgo')
 
 //lest's Rock'n roll some tests
 test('simpliest test', () => {
-    expect(reverseString("elsa")).toBe("asle")
+    expect(reverseString("ad")).toBe("da")
 })
