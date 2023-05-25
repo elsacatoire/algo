@@ -20,4 +20,4 @@ function sumArray(array) {
 //   /  \/  \  /  \      Le code s'exécute     /  \/  \/  \
 //  /   /    \/    \            ICI  :        /    \   \   \
 //    ||  || || ||                              ||  ||  ||
-//console.log(sumArray([1, 3, 5]));
+console.log(sumArray([1, 3, 5]));
